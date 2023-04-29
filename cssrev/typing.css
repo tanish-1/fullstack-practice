@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.typing-animation{
+   display: flex;
+   justify-content: center;
+   align-content: center;
+}
+.typing-animation p{
+    opacity: 0;
+    animation: typing 2s ease-in-out;
+}
+@keyframes typing {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.type{
+    display: inline-flex;
+}
+.type .static-txt{
+    font-size: 70px;
+    font-weight: 400;
+}
+.dynamic{
+margin-left: 12px;
+height: 90px;
+line-height: 90px;
+overflow: hidden;
+}
+.dynamic li{
+list-style: none;
+font-size: 70px;
+font-weight: 400;
+position: relative;
+top: 0;
+animation: slide 4s steps(4) infinite ;
+
+}
+@keyframes slide{
+    100%{
+     top:-360px;
+    }
+}
+.dynamic li span{
+    position: relative;
+}
+.dynamic li span::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-left: 2px solid red;
+    background-color: white;
+left: 0;
+animation: typing 1s steps(10) infinite ;
+}
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}

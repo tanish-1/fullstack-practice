@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    position: sticky;
+    top: 0;
+}
+
+.h_1{
+    width: 150px;
+    height: 100px;
+    background-color: brown;
+    border-radius: 28px;
+  text-align: center;
+}
+.h_1:hover{
+    transform: skew(13deg);
+}
+/*
+.box{
+     display: inline-block;
+} */

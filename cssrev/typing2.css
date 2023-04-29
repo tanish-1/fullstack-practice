@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.conatiner{
+  display: flex;
+
+}
+.conatiner .box{
+font-size: 70px;
+font-weight: 400;
+}
+.conatiner .texts{
+    margin-left: 11px;
+    /* height: 96px;
+   line-height: 96px; */
+   /* height: 56px;
+   line-height: 56px; */
+    /* overflow: hidden; */
+    height: 90px;
+line-height: 90px;
+overflow: hidden;
+}
+.texts li{
+    list-style: none;
+    animation: text 4s steps(4) infinite;
+   position: relative;
+   top: 0;
+   font-size: 60px;
+   font-weight: 400;
+
+}
+@keyframes text {
+    /* 0%{
+        top:0;
+    } */
+    100%{
+       top: -360px; 
+    }
+}
+.texts li span{
+    position: relative;
+}
+.texts li span::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-left: 2px solid red;
+    left: 0;
+    background-color: white;
+    animation: texttyping 1s steps(10) infinite;
+}
+@keyframes texttyping {
+    100%{
+        left: 100%;
+        margin: 0 -24px 0 24px;
+    }
+}

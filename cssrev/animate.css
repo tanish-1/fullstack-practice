@@ -1,0 +1,32 @@
+.box{
+    border: 2px solid;
+    /* transform: skew(13deg); */
+    /* transform: rotate(45deg); */
+    /* transition: width 2s ease-in; */
+    /* width: 455px; */
+    /* animation: box 2s ease-in-out 4  alternate ; */
+   
+}
+/* .box::before{
+    content: "";
+    display: block;
+    background-color: red;
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+} */
+
+/* .box::after{
+    content: "";
+} */
+/* .box:hover{
+    width: 156px;
+} */
+@keyframes box {
+    0%{
+        width: 455px;
+    }
+    100%{
+        width: 123px;
+    }
+}
